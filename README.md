@@ -1,16 +1,23 @@
-### Hi there 👋
+package main
 
-<!--
-**NHG-1/NHG-1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+import "fmt"
 
-Here are some ideas to get you started:
+type Person struct {
+  name string
+  username string
+  age int
+  hobbies []string
+  job string
+}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+func main() {
+  var me = new(Person)
+  
+  me.name     = "Sabbir Hossain"
+  me.username = "NHG-1"
+  me.age      = "18"
+  me.job      = "AI developer | Web developer"
+  me.hobbies  = []string{"code", "anime", "music"," guiterist"," gaming"}
+  
+  fmt.Println(me)
+}
